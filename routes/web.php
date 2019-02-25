@@ -18,4 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Application Controller
+
 Route::get('/submit/application', 'ApplicationController@index')->name('submitApplication');
+Route::post('/submit/application/sent', 'ApplicationController@submit')->name('submit');
