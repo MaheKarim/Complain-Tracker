@@ -14,7 +14,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{ url('/home') }}">
           <span class="menu-title">Dashboard</span>
           <i class="mdi mdi-home menu-icon"></i>
         </a>
@@ -33,8 +33,8 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pages/icons/mdi.html">
-          <span class="menu-title">Icons</span>
+        <a class="nav-link" href="{{ route('submitApplication') }}">
+          <span class="menu-title"> Submit Application </span>
           <i class="mdi mdi-contacts menu-icon"></i>
         </a>
       </li>

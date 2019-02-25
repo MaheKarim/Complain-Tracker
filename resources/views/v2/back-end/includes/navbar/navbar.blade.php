@@ -143,13 +143,18 @@
           </div>
         </li>
         <li class="nav-item nav-logout d-none d-lg-block">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="{{ route('logout') }}"
+          onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
             <i class="mdi mdi-power"></i>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
           </a>
         </li>
         <li class="nav-item nav-settings d-none d-lg-block">
           <a class="nav-link" href="#">
-            <i class="mdi mdi-format-line-spacing"></i>
+            <i class="mdi mdi-format-line-spacing"> </i>
           </a>
         </li>
       </ul>
