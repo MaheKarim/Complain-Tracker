@@ -61,6 +61,20 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
+                                <div class="col-md-6">
+
+                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                          <option selected>Choose...</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                </div>
+                            </div>
+
+
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
